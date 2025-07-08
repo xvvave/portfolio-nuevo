@@ -1,6 +1,7 @@
 import Navbar from "@/components/1 Navbar/Navbar"
 import ScrollToTop from "@/components/fxscripts/scroll-to-top"
 import Footer from "@/components/5 Footer/Footer"
+import OptimizedImage from "@/components/optimized-image"
 
 export const metadata = {
   title: "GloryFit | App de entrenamiento personalizado | Lautaro R. Temperini",
@@ -154,9 +155,9 @@ export default function GloryFitPage() {
                         Segundo, la personalización visible desde el inicio.
                       </h4>
                       <p>
-                        Apenas completado el paso básico, el usuario accedía al módulo "Mi Rutina", donde ya podía ver
+                        Apenas completado el paso básico, el usuario accedía al módulo &quot;Mi Rutina&quot;, donde ya podía ver
                         ejercicios sugeridos según su perfil. Nada de listas genéricas: cada rutina tenía una
-                        justificación visible —por ejemplo, "sugerido por tu edad y nivel de actividad"— y ofrecía
+                        justificación visible —por ejemplo, &quot;sugerido por tu edad y nivel de actividad&quot;— y ofrecía
                         ajustes en intensidad, foco muscular o duración. Esto reforzaba una lógica simple pero poderosa:
                         dar un dato equivale a recibir algo valioso.
                       </p>
@@ -168,11 +169,12 @@ export default function GloryFitPage() {
               {/* User Flow */}
               <section className="bg-[#1A1A1A] p-8 rounded-lg">
                 <div className="mb-8 bg-[#F2F2F2] rounded-lg">
-                  <img
+                  <OptimizedImage
                     src="/images/gloryfit/UserFlow.webp"
                     alt="Diagrama de flujo de usuario de GloryFit mostrando el proceso de configuración y personalización de rutinas"
                     className="w-full max-h-screen object-contain rounded-lg border-2 border-[#A6A6A6]"
-                    style={{ opacity: 0.95 }}
+                    width={1200}
+                    height={800}
                   />
                 </div>
               </section>
@@ -200,7 +202,7 @@ export default function GloryFitPage() {
                   </div>
                   <p>
                     Desarrollamos además un módulo de transparencia algorítmica. Cada recomendación podía desplegar su
-                    lógica. La idea no era "maravillar" con inteligencia artificial, sino mostrar que la app piensa,
+                    lógica. La idea no era &quot;maravillar&quot; con inteligencia artificial, sino mostrar que la app piensa,
                     pero no oculta.
                   </p>
                 </div>
@@ -232,11 +234,12 @@ export default function GloryFitPage() {
               {/* Style Guide */}
               <section className="bg-[#1A1A1A] p-8 rounded-lg">
                 <div className="mb-8 bg-[#F2F2F2] rounded-lg">
-                  <img
+                  <OptimizedImage
                     src="/images/gloryfit/StyleTile.webp"
                     alt="Guía de estilo de GloryFit incluyendo paleta de colores, tipografía, componentes de interfaz e iconografía"
                     className="w-full max-h-screen object-contain rounded-lg border-2 border-[#A6A6A6]"
-                    style={{ opacity: 0.95 }}
+                    width={1200}
+                    height={800}
                   />
                 </div>
               </section>
@@ -248,7 +251,7 @@ export default function GloryFitPage() {
                 </h2>
                 <div className="space-y-4 text-[#A6A6A6] leading-relaxed" style={{ fontFamily: "Manrope, sans-serif" }}>
                   <p>
-                    La experiencia debía transmitir claridad, control y salud. No glamour ni "fitness extremo". Así que
+                    La experiencia debía transmitir claridad, control y salud. No glamour ni &quot;fitness extremo&quot;. Así que
                     fuimos por una interfaz limpia, con lenguaje claro y componentes que acompañaran ese tono.
                   </p>
                   <div className="grid md:grid-cols-2 gap-8">
@@ -256,7 +259,7 @@ export default function GloryFitPage() {
                       <h4 className="text-lg font-semibold text-[#F2F2F2] mb-3">Construimos:</h4>
                       <ul className="space-y-2">
                         <li>• Botones segmentados para elegir nivel de actividad y tiempo</li>
-                        <li>• Dropdowns con ejemplos reales ("Lesión de rodilla", "Objetivo: retomar actividad")</li>
+                        <li>• Dropdowns con ejemplos reales (&quot;Lesión de rodilla&quot;, &quot;Objetivo: retomar actividad&quot;)</li>
                         <li>• Tooltips animados que explicaban para qué se usa cada dato</li>
                         <li>• FAB central siempre visible para iniciar la rutina</li>
                         <li>• Indicadores de progreso en cada paso del onboarding</li>
@@ -295,7 +298,7 @@ export default function GloryFitPage() {
                     </h4>
                     <p className="text-[#A6A6A6]" style={{ fontFamily: "Manrope, sans-serif" }}>
                       Los usuarios prefieren saber por qué se les recomienda algo, aunque no sea perfecto, antes que
-                      recibir una rutina "mágica" sin explicación.
+                      recibir una rutina &quot;mágica&quot; sin explicación.
                     </p>
                   </div>
                   <div>
@@ -319,11 +322,12 @@ export default function GloryFitPage() {
               {/* App Interface */}
               <section className="bg-[#1A1A1A] p-8 rounded-lg">
                 <div className="mb-8 bg-[#F2F2F2] rounded-lg">
-                  <img
+                  <OptimizedImage
                     src="/images/gloryfit/CardsGloryfit.webp"
                     alt="Interfaces de la aplicación GloryFit mostrando pantallas de selección de entrenamiento y detalles de rutina"
                     className="w-full max-h-screen object-contain rounded-lg border-2 border-[#A6A6A6]"
-                    style={{ opacity: 0.95 }}
+                    width={1200}
+                    height={800}
                   />
                 </div>
               </section>
