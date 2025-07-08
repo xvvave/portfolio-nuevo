@@ -28,7 +28,7 @@ export default function OptimizedImage({
       {!isLoaded && !hasError && <div className={`skeleton ${className}`} />}
 
       <Image
-        src={src || "/placeholder.svg"}
+        src={src}
         alt={alt}
         width={width}
         height={height}

@@ -43,7 +43,7 @@ export default function RevealOnScroll({ children, delay = 0, className = "" }: 
   }, [delay])
 
   return (
-    <div ref={ref} className={`reveal ${isVisible ? "revealed" : ""} ${className}`}>
+    <div ref={ref} className={`reveal ${isVisible ? "revealed" : ""} ${className}`} aria-hidden="true">
       {children}
     </div>
   )

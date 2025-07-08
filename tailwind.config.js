@@ -25,6 +25,9 @@ module.exports = {
         background: "#0D0D0D",
         surface: "#111111",
         border: "#9C96A4",
+        light: "#F2F2F2",
+        white: "#fff",
+        dark: "#1A1A1A",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         foreground: "hsl(var(--foreground))",
@@ -50,6 +53,7 @@ module.exports = {
         "slide-up": "slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         "scale-in": "scaleIn 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
         tilt: 'tilt 3s linear infinite',
+        flip: 'flipInX 1.2s cubic-bezier(0.6, 0.05, 0.2, 0.95)',
       },
       keyframes: {
         fadeIn: {
@@ -68,6 +72,14 @@ module.exports = {
           '0%, 50%, 100%': { transform: 'rotate(0deg)' },
           '25%': { transform: 'rotate(1.5deg)' },
           '75%': { transform: 'rotate(-1.5deg)' },
+        },
+        flipInX: {
+          '0%': {
+            transform: 'perspective(400px) rotateY(0deg)',
+          },
+          '100%': {
+            transform: 'perspective(400px) rotateY(360deg)',
+          },
         },
       },
       transitionTimingFunction: {

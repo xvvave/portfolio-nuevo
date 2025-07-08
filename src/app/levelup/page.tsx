@@ -1,15 +1,19 @@
-"use client";
-
 import Image from "next/image";
 import Navbar from "../../components/1 Navbar/Navbar";
-import Footer from "../../components/5 Footer/Footer";
+import ScrollToTop from "../../components/fxscripts/scroll-to-top";
+
+export const metadata = {
+  title: "LevelUp | Plataforma Educativa | Lautaro R. Temperini",
+  description: "LevelUp: Plataforma educativa gamificada desarrollada por Lautaro R. Temperini. Transforma el aprendizaje en una experiencia interactiva y motivadora.",
+  keywords: "LevelUp, educación, gamificación, plataforma, Lautaro Temperini, desarrollo web, aprendizaje"
+};
 
 export default function LevelUpPage() {
   return (
     <div className="page-transition">
       <Navbar />
       <main className="min-h-screen pt-16 md:pt-20 lg:pt-24">
-        <div className="container mx-auto py-12 md:py-16 lg:py-20">
+        <div className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-10">
           <h1 className="text-4xl md:text-6xl lg:text-8xl xl:text-[140px] font-semibold leading-tight xl:leading-[168px] text-[#F2F2F2] mb-8 md:mb-12 lg:mb-16" style={{ fontFamily: "Neue Haas Grotesk Display Pro, sans-serif" }}>
             LEVELUP
           </h1>
@@ -17,7 +21,7 @@ export default function LevelUpPage() {
             <div className="mb-12">
               <Image 
                 src="/images/levelup-logo.png" 
-                alt="LevelUp Logo" 
+                alt="Logo de la plataforma educativa LevelUp" 
                 width={128}
                 height={128}
                 className="object-contain mb-8"
@@ -67,7 +71,7 @@ export default function LevelUpPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <ScrollToTop size={48} />
     </div>
   );
 } 

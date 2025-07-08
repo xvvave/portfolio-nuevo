@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { ArrowUp } from "lucide-react"
 
-export default function ScrollToTop() {
+export default function ScrollToTop({ size = 32 }: { size?: number }) {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -31,10 +31,11 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-[#8900C3] hover:bg-[#A020F0] text-white rounded-full shadow-lg transition-all duration-200 hover:scale-110 flex items-center justify-center"
+          style={{ width: size, height: size }}
+          className={"fixed bottom-2 md:bottom-4 right-6 md:right-12 z-50 bg-white/10 backdrop-blur-sm flex items-center justify-center rounded-full hover:bg-white/20 transition-all duration-200 hover:scale-105"}
           aria-label="Scroll to top"
         >
-          <ArrowUp size={20} />
+          <ArrowUp size={size * 0.42} color="#f2f2f2" />
         </button>
       )}
     </>

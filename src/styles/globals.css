@@ -69,8 +69,6 @@ body::before {
   z-index: 1;
 }
 
-
-
 /* Variable Typography - Fluid scaling */
 .fluid-text-xs {
   font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -150,7 +148,6 @@ body::before {
 * {
   transition:
     opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
     color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
     border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
@@ -159,7 +156,7 @@ body::before {
 
 /* Focus styles */
 *:focus-visible {
-  outline: 2px solid hsl(var(--primary));
+  outline: 2px solid #9D00E0;
   outline-offset: 2px;
 }
 
@@ -225,12 +222,16 @@ body::before {
 /* Smooth page transitions */
 .page-transition {
   opacity: 0;
-  transform: translateY(10px);
-  animation: pageEnter 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform: translateY(20px);
+  animation: pageEnter 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes pageEnter {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -242,5 +243,40 @@ section {
 }
 
 /* End of globals.css */
+
+:focus {
+  outline-color: #B177D0 !important;
+}
+
+@keyframes eraseInOut {
+  0% { opacity: 1; }
+  40% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.erase-in-out {
+  animation: eraseInOut 300ms cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ABOUT slide in from left */
+.about-slide-in {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: none;
+}
+.about-slide-in.revealed {
+  animation: aboutSlideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes aboutSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 

@@ -1,15 +1,41 @@
-"use client";
-
 import Image from "next/image";
 import Navbar from "../../components/1 Navbar/Navbar";
-import Footer from "../../components/5 Footer/Footer";
+import ScrollToTop from "../../components/fxscripts/scroll-to-top";
+
+export const metadata = {
+  title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
+  description: "RectoFinal: Plataforma de gestión inmobiliaria desarrollada por Lautaro R. Temperini. Simplifica el proceso de compra, venta y alquiler de propiedades.",
+  keywords: "RectoFinal, inmobiliaria, gestión, Lautaro Temperini, desarrollo web, propiedades, alquiler, compra, venta",
+  openGraph: {
+    title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
+    description: "RectoFinal: Plataforma de gestión inmobiliaria desarrollada por Lautaro R. Temperini. Simplifica el proceso de compra, venta y alquiler de propiedades.",
+    url: "https://portfolio-temperini.vercel.app/rectofinal",
+    siteName: "Temperini Portfolio",
+    locale: "es_AR",
+    type: "website",
+    images: [
+      {
+        url: "https://portfolio-temperini.vercel.app/images/rectofinal-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Logo de RectoFinal"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
+    description: "RectoFinal: Plataforma de gestión inmobiliaria desarrollada por Lautaro R. Temperini. Simplifica el proceso de compra, venta y alquiler de propiedades.",
+    images: ["https://portfolio-temperini.vercel.app/images/rectofinal-logo.png"]
+  }
+};
 
 export default function RectoFinalPage() {
   return (
     <div className="page-transition">
       <Navbar />
       <main className="min-h-screen pt-16 md:pt-20 lg:pt-24">
-        <div className="container mx-auto py-12 md:py-16 lg:py-20">
+        <div className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-10">
           <h1 className="text-4xl md:text-6xl lg:text-8xl xl:text-[140px] font-semibold leading-tight xl:leading-[168px] text-[#F2F2F2] mb-8 md:mb-12 lg:mb-16" style={{ fontFamily: "Neue Haas Grotesk Display Pro, sans-serif" }}>
             RECTOFINAL
           </h1>
@@ -17,7 +43,7 @@ export default function RectoFinalPage() {
             <div className="mb-12">
               <Image 
                 src="/images/rectofinal-logo.png" 
-                alt="RectoFinal Logo" 
+                alt="Logo de la inmobiliaria RectoFinal" 
                 width={128}
                 height={128}
                 className="object-contain mb-8"
@@ -67,7 +93,7 @@ export default function RectoFinalPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <ScrollToTop size={48} />
     </div>
   );
 } 

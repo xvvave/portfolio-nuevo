@@ -8,14 +8,16 @@ import Footer from "../components/5 Footer/Footer";
 
 export default function HomePage() {
   return (
-    <div className="page-transition">
+    <>
       <Navbar />
-      <main>
-        <Hero />
-        <Projects />
-        <About />
-      </main>
-      <Footer />
-    </div>
+      <div className="page-transition">
+        <main>
+          <Hero />
+          <Projects />
+          <About />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 } 

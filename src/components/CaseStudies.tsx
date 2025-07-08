@@ -1,4 +1,4 @@
-import RevealOnScroll from "./reveal-on-scroll"
+import RevealOnScroll from "./fxscripts/reveal-on-scroll"
 import OptimizedImage from "./optimized-image"
 
 interface CaseStudySection {
