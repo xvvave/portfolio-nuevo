@@ -1,4 +1,4 @@
-import Navbar from "../../components/1 Navbar/Navbar";
+import Navbar from "@/components/1 Navbar/Navbar";
 import Footer from "../../components/5 Footer/Footer";
 import Playground from "../../components/Playground";
 
@@ -9,13 +9,13 @@ export const metadata = {
   openGraph: {
     title: "Playground | Lautaro R. Temperini",
     description: "Explora el playground interactivo de Lautaro R. Temperini: experimentos, microproyectos y prototipos de diseño y desarrollo web.",
-    url: "https://portfolio-temperini.vercel.app/playground",
+    url: "https://temperini.vercel.app/playground",
     siteName: "Temperini Portfolio",
     locale: "es_AR",
     type: "website",
     images: [
       {
-        url: "https://portfolio-temperini.vercel.app/images/foto-lautaro.png",
+        url: "https://temperini.vercel.app/images/foto-lautaro.png",
         width: 800,
         height: 600,
         alt: "Foto de Lautaro Temperini"
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Playground | Lautaro R. Temperini",
     description: "Explora el playground interactivo de Lautaro R. Temperini: experimentos, microproyectos y prototipos de diseño y desarrollo web.",
-    images: ["https://portfolio-temperini.vercel.app/images/foto-lautaro.png"]
+    images: ["https://temperini.vercel.app/images/foto-lautaro.png"]
   }
 };
 

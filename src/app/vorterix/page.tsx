@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "../../components/1 Navbar/Navbar";
-import ScrollToTop from "../../components/fxscripts/scroll-to-top";
+import Navbar from "@/components/1 Navbar/Navbar";
+import ScrollToTop from "@/components/fxscripts/scroll-to-top";
 
 export const metadata = {
   title: "Vorterix | Plataforma de Streaming | Lautaro R. Temperini",
@@ -9,13 +9,13 @@ export const metadata = {
   openGraph: {
     title: "Vorterix | Plataforma de Streaming | Lautaro R. Temperini",
     description: "Vorterix: Plataforma de streaming de radio desarrollada por Lautaro R. Temperini. Conecta oyentes con sus programas favoritos y contenido exclusivo.",
-    url: "https://portfolio-temperini.vercel.app/vorterix",
+    url: "https://temperini.vercel.app/vorterix",
     siteName: "Temperini Portfolio",
     locale: "es_AR",
     type: "website",
     images: [
       {
-        url: "https://portfolio-temperini.vercel.app/images/vorterix-logo.png",
+        url: "https://temperini.vercel.app/images/vorterix-logo.png",
         width: 800,
         height: 600,
         alt: "Logo de Vorterix"
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Vorterix | Plataforma de Streaming | Lautaro R. Temperini",
     description: "Vorterix: Plataforma de streaming de radio desarrollada por Lautaro R. Temperini. Conecta oyentes con sus programas favoritos y contenido exclusivo.",
-    images: ["https://portfolio-temperini.vercel.app/images/vorterix-logo.png"]
+    images: ["https://temperini.vercel.app/images/vorterix-logo.png"]
   }
 };
 

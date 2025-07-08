@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "../../components/1 Navbar/Navbar";
-import ScrollToTop from "../../components/fxscripts/scroll-to-top";
+import Navbar from "@/components/1 Navbar/Navbar";
+import ScrollToTop from "@/components/fxscripts/scroll-to-top";
 
 export const metadata = {
   title: "LevelUp | Plataforma Educativa | Lautaro R. Temperini",

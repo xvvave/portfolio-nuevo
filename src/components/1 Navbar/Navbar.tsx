@@ -131,7 +131,13 @@ export default function Navbar() {
             href="#projects"
             onClick={handleProjectsClick}
             className={`fluid-text-sm font-extrabold transition-all duration-150 relative cursor-pointer ${
-              isActive("/proyectos") ? "text-[#9D00E0]" : "text-[#F2F2F2] hover:text-[#A6A6A6]"
+              pathname === "/proyectos"
+                ? "text-[#9D00E0]"
+                : pathname === "/playground"
+                ? "text-[#595959] hover:text-[#F2F2F2]"
+                : pathname === "/"
+                ? "text-[#F2F2F2]"
+                : "text-[#F2F2F2] hover:text-[#A6A6A6]"
             }`}
             style={{ fontFamily: "var(--font-inter)" }}
           >
@@ -141,7 +147,11 @@ export default function Navbar() {
           <Link
             href="/playground"
             className={`fluid-text-sm font-extrabold transition-all duration-150 relative cursor-pointer ${
-              isActive("/playground") ? "text-[#A6A6A6]" : "text-[#F2F2F2] hover:text-[#A6A6A6]"
+              pathname === "/playground"
+                ? "text-[#A6A6A6]"
+                : pathname === "/"
+                ? "text-[#595959] hover:text-[#F2F2F2]"
+                : "text-[#F2F2F2] hover:text-[#A6A6A6]"
             }`}
             style={{ fontFamily: "var(--font-inter)" }}
           >

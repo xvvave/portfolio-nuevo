@@ -9,13 +9,13 @@ export const metadata = {
   openGraph: {
     title: "Contacto | Lautaro R. Temperini",
     description: "Ponte en contacto con Lautaro R. Temperini para proyectos de diseño multimedia, desarrollo web y experiencias digitales.",
-    url: "https://portfolio-temperini.vercel.app/contact",
+    url: "https://temperini.vercel.app/contact",
     siteName: "Temperini Portfolio",
     locale: "es_AR",
     type: "website",
     images: [
       {
-        url: "https://portfolio-temperini.vercel.app/images/foto-lautaro.png",
+        url: "https://temperini.vercel.app/images/foto-lautaro.png",
         width: 800,
         height: 600,
         alt: "Foto de Lautaro Temperini"
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contacto | Lautaro R. Temperini",
     description: "Ponte en contacto con Lautaro R. Temperini para proyectos de diseño multimedia, desarrollo web y experiencias digitales.",
-    images: ["https://portfolio-temperini.vercel.app/images/foto-lautaro.png"]
+    images: ["https://temperini.vercel.app/images/foto-lautaro.png"]
   }
 };
 

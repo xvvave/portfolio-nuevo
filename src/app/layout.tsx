@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${manrope.variable}`}>
       <head>
-        <link rel="canonical" href="https://portfolio-temperini.vercel.app/" />
+        <link rel="canonical" href="https://temperini.vercel.app/" />
         <meta name="apple-mobile-web-app-title" content="Temperini" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon-temperini/icon0.svg" />

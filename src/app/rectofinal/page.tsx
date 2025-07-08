@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "../../components/1 Navbar/Navbar";
-import ScrollToTop from "../../components/fxscripts/scroll-to-top";
+import Navbar from "@/components/1 Navbar/Navbar";
+import ScrollToTop from "@/components/fxscripts/scroll-to-top";
 
 export const metadata = {
   title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
@@ -9,13 +9,13 @@ export const metadata = {
   openGraph: {
     title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
     description: "RectoFinal: Plataforma de gestión inmobiliaria desarrollada por Lautaro R. Temperini. Simplifica el proceso de compra, venta y alquiler de propiedades.",
-    url: "https://portfolio-temperini.vercel.app/rectofinal",
+    url: "https://temperini.vercel.app/rectofinal",
     siteName: "Temperini Portfolio",
     locale: "es_AR",
     type: "website",
     images: [
       {
-        url: "https://portfolio-temperini.vercel.app/images/rectofinal-logo.png",
+        url: "https://temperini.vercel.app/images/rectofinal-logo.png",
         width: 800,
         height: 600,
         alt: "Logo de RectoFinal"
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "RectoFinal | Gestión Inmobiliaria | Lautaro R. Temperini",
     description: "RectoFinal: Plataforma de gestión inmobiliaria desarrollada por Lautaro R. Temperini. Simplifica el proceso de compra, venta y alquiler de propiedades.",
-    images: ["https://portfolio-temperini.vercel.app/images/rectofinal-logo.png"]
+    images: ["https://temperini.vercel.app/images/rectofinal-logo.png"]
   }
 };
 
