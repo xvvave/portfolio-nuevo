@@ -107,7 +107,7 @@ export default function GloryFitPage() {
           right={
             <div className="min-h-[500px] bg-[#F2F2F2] flex items-center justify-center rounded-xl">
               <FullImage
-                src="/images/gloryfit/UserFlow.webp"
+                src="/images/gloryfitImages/UserFlow.webp"
                 alt="User Flow de GloryFit: diagrama del proceso de configuración y personalización de rutinas en la app"
                 width={1200}
                 height={800}
@@ -121,6 +121,7 @@ export default function GloryFitPage() {
 
         {/* El sistema detrás + Diseño de experiencia  */}
         <TwoColumn
+          alignItems="start"
           left={
             <div className="space-y-8">
               <h2 className="text-3xl font-bold text-[#F2F2F2]">El sistema detrás</h2>
@@ -152,7 +153,7 @@ export default function GloryFitPage() {
 
         {/* Style Guide: imagen full width */}
         <FullImage
-          src="/images/gloryfit/StyleTile.webp"
+          src="/images/gloryfitImages/StyleTile.webp"
           alt="Style Tile de GloryFit: paleta de colores, tipografía, componentes de interfaz e iconografía de la app"
           className="max-w-[60vw] w-full h-auto mx-auto"
           shadow
@@ -170,7 +171,7 @@ export default function GloryFitPage() {
           }
           right={
             <FullImage
-              src="/images/gloryfit/CardsGloryfit.webp"
+              src="/images/gloryfitImages/CardsGloryfit.webp"
               alt="Pantallas de selección y detalles de rutina personalizada en GloryFit"
               width={1200}
               height={800}
