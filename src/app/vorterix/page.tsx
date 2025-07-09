@@ -7,6 +7,7 @@ import SectionWrapper from "@/components/sections/SectionWrapper"
 import FullImage from "@/components/sections/FullImage"
 import ContentCard from "@/components/sections/ContentCard"
 import ConclusionBlock from "@/components/sections/ConclusionBlock"
+import Image from "next/image"
 
 export const metadata = {
   title: "Paren la Mano | Landing que convierte audiencia en comunidad | Lautaro R. Temperini",
@@ -71,7 +72,7 @@ export default function VorterixLandingPage() {
             <div>
               <h2 className="text-3xl font-bold text-[#F2F2F2] mb-6">El brief real: un reto con límites claros</h2>
               <blockquote className="text-[#A6A6A6] italic mb-6 text-lg border-l-4 border-purple-500 pl-4">
-                "Tenés que convertir oyentes en leads. Sin métricas. Sin data. Solo criterio y decisiones que funcionen."
+              &quotTenés que convertir oyentes en leads. Sin métricas. Sin data. Solo criterio y decisiones que funcionen.&quot
               </blockquote>
               <p className="text-[#A6A6A6] leading-relaxed">
                 Desafío académico, mentalidad profesional.<br />
@@ -102,6 +103,8 @@ export default function VorterixLandingPage() {
             alt="Logo Vorterix"
             className="w-full block mx-auto h-auto"
             border={false}
+            width={400}
+            height={200}
           />
         </SectionWrapper>
 
@@ -124,7 +127,7 @@ export default function VorterixLandingPage() {
           size="md"
           left={
             <div className="flex-1 rounded-2xl p-8 bg-[#9C96A4]/10 border-2 border-[#A6A6A6]/10">
-              <h3 className="text-[#F2F2F2] font-semibold text-xl mb-4">La audiencia no quería "algo lindo"</h3>
+              <h3 className="text-[#F2F2F2] font-semibold text-xl mb-4">La audiencia no quería &quot;algo lindo&quot;</h3>
               <p className="text-[#A6A6A6] mb-4">Quería algo que hablara como ellos:</p>
               <ul className="text-[#A6A6A6] space-y-2">
                 <li className="flex items-start">
@@ -188,6 +191,8 @@ export default function VorterixLandingPage() {
               alt="Paleta de colores Vorterix"
               className="w-full h-auto"
               border={false}
+              width={600}
+              height={400}
             />
           }
           right={
@@ -196,6 +201,8 @@ export default function VorterixLandingPage() {
               alt="Tipografía Vorterix"
               className="w-full h-auto"
               border={false}
+              width={600}
+              height={400}
             />
           }
         />
@@ -211,6 +218,7 @@ export default function VorterixLandingPage() {
                 loop
                 muted
                 playsInline
+                preload="metadata"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -221,6 +229,8 @@ export default function VorterixLandingPage() {
               alt="Referencias de diseño Vorterix"
               className="w-full h-auto"
               border={false}
+              width={600}
+              height={400}
             />
           }
         />
@@ -237,6 +247,7 @@ export default function VorterixLandingPage() {
                 loop
                 muted
                 playsInline
+                preload="metadata"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -268,7 +279,7 @@ export default function VorterixLandingPage() {
                   <li className="flex items-start">
                     <span className="text-green-400 mr-3 mt-1">•</span>
                     <span>
-                      <strong className="text-[#F2F2F2]">Narrativa FOMO:</strong> "Accedé a lo que otros se pierden".
+                      <strong className="text-[#F2F2F2]">Narrativa FOMO:</strong> &quotAccedé a lo que otros se pierden&quot.
                     </span>
                   </li>
                 </ul>
@@ -286,6 +297,7 @@ export default function VorterixLandingPage() {
               loop
               muted
               playsInline
+              preload="metadata"
               className="w-full h-full object-cover"
             />
           </div>
@@ -330,11 +342,14 @@ export default function VorterixLandingPage() {
           }
           right={
             <div className="h-full flex items-start justify-start rounded-2xl overflow-hidden bg-[#181818]/40 border-2 border-[#A6A6A6]/10">
-              <img
+              <Image
                 src="/images/vorterixImages/VorterixMockup.webp"
                 alt="Mockup final de la landing Vorterix"
+                width={800}
+                height={600}
                 className="w-full h-full object-cover rounded-2xl"
-                loading="lazy"
+                priority={false}
+                quality={85}
               />
             </div>
           }
