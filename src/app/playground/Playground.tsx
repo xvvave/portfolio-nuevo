@@ -6,7 +6,6 @@ import OptimizedImage from "../../components/optimized-image"
 import { playgroundItems } from "@/data/playgroundItems"
 import { filterOptions } from "@/data/playgroundFilters"
 import GlareHover from "../../components/fxscripts/GlareHover"
-import ShinyText from "../../components/fxscripts/ShinyText"
 
 export default function PlaygroundGrid() {
   const [activeFilter, setActiveFilter] = useState("all")
