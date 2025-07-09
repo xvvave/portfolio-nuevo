@@ -71,7 +71,7 @@ export default function VorterixLandingPage() {
           title="El brief real: un reto con límites claros"
           description={
             <>
-              <span className="block text-[#A6A6A6] italic mb-2">"Tenés que convertir oyentes en leads. Sin métricas. Sin data. Solo criterio y decisiones que funcionen."</span>
+              <span className="block text-[#A6A6A6] italic mb-2">&quot;Tenés que convertir oyentes en leads. Sin métricas. Sin data. Solo criterio y decisiones que funcionen.&quot;</span>
               Desafío académico, mentalidad profesional.<br />
               Nuestro objetivo fue claro: captar público joven a través de contenido exclusivo y llevarlo a otros streamings de Vorterix.
             </>
