@@ -100,7 +100,7 @@ export default function GloryFitPage() {
               <p className="text-[#A6A6A6]">Dividimos la experiencia en dos grandes momentos:</p>
               <ul className="list-disc pl-5 text-[#A6A6A6] space-y-2">
                 <li>Primero, el ingreso gradual y justificado de información. Pedimos solo lo esencial al inicio: edad, nivel de actividad, objetivos. Más adelante, una vez que el usuario veía lo que la app podía ofrecer, le pedíamos datos más sensibles como peso o historial médico. Cada dato venía acompañado de una explicación contextual: por qué lo pedimos, cómo se usa, y qué gana el usuario a cambio.</li>
-                <li>Segundo, la personalización visible desde el inicio. Apenas completado el paso básico, el usuario accedía al módulo "Mi Rutina", donde ya podía ver ejercicios sugeridos según su perfil. Nada de listas genéricas: cada rutina tenía una justificación visible y ofrecía ajustes en intensidad, foco muscular o duración. Esto reforzaba una lógica simple pero poderosa: dar un dato equivale a recibir algo valioso.</li>
+                <li>Segundo, la personalización visible desde el inicio. Apenas completado el paso básico, el usuario accedía al módulo &quot;Mi Rutina&quot;, donde ya podía ver ejercicios sugeridos según su perfil. Nada de listas genéricas: cada rutina tenía una justificación visible y ofrecía ajustes en intensidad, foco muscular o duración. Esto reforzaba una lógica simple pero poderosa: dar un dato equivale a recibir algo valioso.</li>
               </ul>
             </div>
           }
@@ -130,13 +130,13 @@ export default function GloryFitPage() {
                 <li>Un usuario activo sin lesiones, una rutina de intensidad media-alta.</li>
                 <li>Si había historial de lesiones, se priorizaban ejercicios de bajo riesgo o rehabilitación.</li>
               </ul>
-              <p className="text-[#A6A6A6]">Desarrollamos además un módulo de transparencia algorítmica. Cada recomendación podía desplegar su lógica. La idea no era "maravillar" con inteligencia artificial, sino mostrar que la app piensa, pero no oculta.</p>
+              <p className="text-[#A6A6A6]">Desarrollamos además un módulo de transparencia algorítmica. Cada recomendación podía desplegar su lógica. La idea no era &quot;maravillar&quot; con inteligencia artificial, sino mostrar que la app piensa, pero no oculta.</p>
             </div>
           }
           right={
             <div className="space-y-8">
               <h2 className="text-3xl font-bold text-[#F2F2F2]">Diseño de experiencia</h2>
-              <p className="text-[#A6A6A6]">La experiencia debía transmitir claridad, control y salud. No glamour ni "fitness extremo". Así que fuimos por una interfaz limpia, con lenguaje claro y componentes que acompañaran ese tono.</p>
+              <p className="text-[#A6A6A6]">La experiencia debía transmitir claridad, control y salud. No glamour ni &quot;fitness extremo&quot;. Así que fuimos por una interfaz limpia, con lenguaje claro y componentes que acompañaran ese tono.</p>
               <ul className="list-disc pl-5 text-[#A6A6A6] space-y-2">
                 <li>Botones segmentados para elegir nivel de actividad y tiempo</li>
                 <li>Dropdowns con ejemplos reales (&quot;Lesión de rodilla&quot;, &quot;Objetivo: retomar actividad&quot;)</li>
