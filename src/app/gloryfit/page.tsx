@@ -115,9 +115,7 @@ export default function GloryFitPage() {
                 className="max-h-[400px] w-auto"
               />
             </div>
-            
           }
-          shadow
           reverse
         />
 
@@ -141,7 +139,7 @@ export default function GloryFitPage() {
               <p className="text-[#A6A6A6]">La experiencia debía transmitir claridad, control y salud. No glamour ni "fitness extremo". Así que fuimos por una interfaz limpia, con lenguaje claro y componentes que acompañaran ese tono.</p>
               <ul className="list-disc pl-5 text-[#A6A6A6] space-y-2">
                 <li>Botones segmentados para elegir nivel de actividad y tiempo</li>
-                <li>Dropdowns con ejemplos reales ("Lesión de rodilla", "Objetivo: retomar actividad")</li>
+                <li>Dropdowns con ejemplos reales (&quot;Lesión de rodilla&quot;, &quot;Objetivo: retomar actividad&quot;)</li>
                 <li>Tooltips animados que explicaban para qué se usa cada dato</li>
                 <li>FAB central siempre visible para iniciar la rutina</li>
                 <li>Indicadores de progreso en cada paso del onboarding</li>
@@ -189,7 +187,7 @@ export default function GloryFitPage() {
             El ritmo del onboarding define la tasa de abandono. Pedir permiso sin mostrar valor es un callejón sin salida.
           </InsightCard>
           <InsightCard title="Transparencia supera a la automatización.">
-            Los usuarios prefieren saber por qué se les recomienda algo, aunque no sea perfecto, antes que recibir una rutina "mágica" sin explicación.
+            Los usuarios prefieren saber por qué se les recomienda algo, aunque no sea perfecto, antes que recibir una rutina &quot;mágica&quot; sin explicación.
           </InsightCard>
           <InsightCard title="El control genera confianza.">
             Dejar que el usuario ajuste su rutina, incluso si el sistema es inteligente, refuerza la percepción de seguridad.
