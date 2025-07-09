@@ -1,6 +1,6 @@
 import Navbar from "@/components/1 Navbar/Navbar";
 import Footer from "../../components/5 Footer/Footer";
-import Playground from "../../components/Playground";
+import PlaygroundGrid from "./Playground";
 
 export const metadata = {
   title: "Playground | Lautaro R. Temperini",
@@ -35,7 +35,7 @@ export default function PlaygroundPage() {
     <div className="page-transition">
       <Navbar />
       <main className="min-h-screen pt-16 md:pt-20 lg:pt-24 px-4 md:px-6 lg:px-10 w-full">
-        <Playground />
+        <PlaygroundGrid />
       </main>
     </div>
   );

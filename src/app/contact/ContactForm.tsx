@@ -82,7 +82,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
       </button>
       {submitted && (
         <p className="mt-2" style={{ color: '#00FFC2' }} aria-live="polite">
-          Excelente, {form.name.trim() ? form.name : 'amig@'}! Mensaje enviado.
+          Excelente, {form.name.trim() ? form.name.trim().split(" ")[0] : 'amig@'}! Mensaje enviado.
         </p>
       )}
     </form>

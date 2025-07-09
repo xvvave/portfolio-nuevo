@@ -54,6 +54,7 @@ module.exports = {
         "scale-in": "scaleIn 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
         tilt: 'tilt 3s linear infinite',
         flip: 'flipInX 1.2s cubic-bezier(0.6, 0.05, 0.2, 0.95)',
+        shine: 'shine 4s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -80,6 +81,11 @@ module.exports = {
           '100%': {
             transform: 'perspective(400px) rotateY(360deg)',
           },
+        },
+        shine: {
+          '0%':   { 'background-position': '100%' },
+          '50%':  { 'background-position': '-100%' },
+          '100%': { 'background-position': '-200%' },
         },
       },
       transitionTimingFunction: {
