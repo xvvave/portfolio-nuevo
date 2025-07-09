@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://temperini.dev
+Host: https://temperini.vercel.app
 
 # Sitemaps
-Sitemap: https://temperini.dev/sitemap.xml
+Sitemap: https://temperini.vercel.app/sitemap.xml
