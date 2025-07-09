@@ -117,7 +117,7 @@ export default function VorterixLandingPage() {
               <>
                 Estudiamos el tono y contenido del programa, analizamos redes, y observamos qué funcionaba en medios como Olga y LuzuTV.<br />
                 <br />
-                <span className="block text-[#A6A6A6] font-semibold mb-2">La audiencia no quería “algo lindo”. Quería algo que hablara como ellos:</span>
+                <span className="block text-[#A6A6A6] font-semibold mb-2">La audiencia no quería &quot;algo lindo&quot;. Quería algo que hablara como ellos:</span>
                 <ul className="list-disc pl-5 text-[#A6A6A6] mb-2">
                   <li>Ácido, informal, sin rodeos.</li>
                   <li>Que no sobreexpliquen.</li>
@@ -152,7 +152,7 @@ export default function VorterixLandingPage() {
                   <li>Formulario duplicado (inicio y fin): máxima visibilidad sin repetir visualmente.</li>
                   <li>Carrusel de clips: muestra el valor de la comunidad antes de pedir el email.</li>
                   <li>Scroll modular y jerarquías claras: UX sin fricción.</li>
-                  <li>Narrativa FOMO: “Accedé a lo que otros se pierden”.</li>
+                  <li>Narrativa FOMO: &quot;Accedé a lo que otros se pierden&quot;.</li>
                 </ul>
               </>
             }
