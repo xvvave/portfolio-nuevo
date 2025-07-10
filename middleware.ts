@@ -7,9 +7,19 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const bypass = request.cookies.get('bypass-construccion')
 
-  if (blockedPaths.some(path => pathname.startsWith(path)) && !bypass) {
-    // Redirige a /en-construccion si entra a esas páginas
-    return NextResponse.redirect(new URL('/en-construccion', request.url))
+  // Log para debugging
+  console.log('Middleware ejecutándose para:', pathname)
+  console.log('Bypass cookie:', bypass)
+
+  if (blockedPaths.some(path => pathname.startsWith(path))) {
+    console.log('Ruta bloqueada detectada:', pathname)
+    
+    if (!bypass) {
+      console.log('Redirigiendo a /en-construccion')
+      return NextResponse.redirect(new URL('/en-construccion', request.url))
+    } else {
+      console.log('Bypass activado, permitiendo acceso')
+    }
   }
 
   return NextResponse.next()
@@ -17,13 +27,9 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/playground',
+    '/levelup', 
+    '/rectofinal',
+    '/en-construccion'
   ],
 } 
